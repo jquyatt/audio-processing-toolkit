@@ -1,0 +1,22 @@
+name: Check toolkit
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm run check
+      - run: git diff --exit-code -- examples/
+      - run: npm pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio-processing-toolkit-node-${{ matrix.node }}
+          path: '*.tgz'

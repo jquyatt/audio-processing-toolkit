@@ -1,0 +1,13 @@
+Audio Processing Toolkit
+Copyright (C) 2026 jquyatt and contributors
+Licensed under GPL-3.0-or-later.
+
+Open Stage Control is a separate GPL project by Jean-Emmanuel Doucet and contributors:
+https://framagit.org/jean-emmanuel/open-stage-control
+The toolkit uses its documented Canvas and custom-module APIs. Open Stage Control is not bundled.
+
+EQ equations: W3C Audio EQ Cookbook, based on Robert Bristow-Johnson's cookbook:
+https://www.w3.org/TR/audio-eq-cookbook/
+The implementation was written independently; documentation attribution does not imply exact mixer DSP equivalence.
+
+Mixing Station's documented interaction concepts informed the UX. No Mixing Station source code or assets are included. This is an independent project, not affiliated with Mixing Station or Open Stage Control's maintainers.

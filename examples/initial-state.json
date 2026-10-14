@@ -1,0 +1,67 @@
+{
+  "eq": {
+    "channel": 1,
+    "known": true,
+    "editable": true,
+    "enabled": true,
+    "sampleRate": 48000,
+    "bands": [
+      {
+        "type": 2,
+        "frequency": 150,
+        "gain": -3,
+        "q": 1,
+        "known": true
+      },
+      {
+        "type": 2,
+        "frequency": 600,
+        "gain": 2,
+        "q": 2,
+        "known": true
+      },
+      {
+        "type": 2,
+        "frequency": 2500,
+        "gain": -4,
+        "q": 3,
+        "known": true
+      },
+      {
+        "type": 2,
+        "frequency": 8000,
+        "gain": 2,
+        "q": 1,
+        "known": true
+      }
+    ]
+  },
+  "gate": {
+    "channel": 1,
+    "kind": "gate",
+    "known": true,
+    "editable": true,
+    "enabled": true,
+    "settings": {
+      "threshold": -38,
+      "range": 30,
+      "modeIndex": 1
+    },
+    "history": []
+  },
+  "comp": {
+    "channel": 1,
+    "kind": "comp",
+    "known": true,
+    "editable": true,
+    "enabled": true,
+    "settings": {
+      "threshold": -24,
+      "ratio": 4,
+      "knee": 2,
+      "gain": 3,
+      "mix": 100
+    },
+    "history": []
+  }
+}
