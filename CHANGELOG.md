@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 — Unreleased
+## 0.1.0 — 2026-10-14 (experimental)
 
 - Extract EQ, RTA display, Gate and Compressor controls from the live workspace.
 - Integrate input/GR history with each dynamics transfer plot.
