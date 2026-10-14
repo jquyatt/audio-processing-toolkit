@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-10-14 (experimental)
+
+- Expose supported host-integration entry points so consuming workspaces can remove duplicated source.
+
 ## 0.1.0 — 2026-10-14 (experimental)
 
 - Extract EQ, RTA display, Gate and Compressor controls from the live workspace.

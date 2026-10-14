@@ -1,13 +1,16 @@
 {
   "name": "audio-processing-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Touch EQ and dynamics control widgets for Open Stage Control. No audio DSP engine.",
   "license": "GPL-3.0-or-later",
   "engines": {
     "node": ">=22"
   },
-  "exports": "./src/widgets.mjs",
+  "exports": {
+    ".": "./src/widgets.mjs",
+    "./source": "./src/source.mjs"
+  },
   "files": [
     "src",
     "examples",
@@ -16,7 +19,9 @@
     "BINDINGS.md",
     "LICENSE",
     "NOTICE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "test",
+    "CONTRIBUTING.md"
   ],
   "scripts": {
     "test": "node --test test/*.test.mjs",
